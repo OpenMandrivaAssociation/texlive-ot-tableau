@@ -1,3 +1,9 @@
+# revision 17829
+# category Package
+# catalog-ctan /macros/latex/contrib/ot-tableau
+# catalog-date 2010-04-14 18:13:33 +0200
+# catalog-license lppl
+# catalog-version undef
 Name:		texlive-ot-tableau
 Version:	20100414
 Release:	1
@@ -42,6 +48,7 @@ variants are available to suit personal taste.
 %doc %{_texmfdistdir}/doc/latex/ot-tableau/README
 %doc %{_texmfdistdir}/doc/latex/ot-tableau/ot-tableau.pdf
 %doc %{_texmfdistdir}/doc/latex/ot-tableau/ot-tableau.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -52,3 +59,5 @@ variants are available to suit personal taste.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
