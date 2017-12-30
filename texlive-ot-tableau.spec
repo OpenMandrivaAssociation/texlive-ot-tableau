@@ -5,8 +5,8 @@
 # catalog-license lppl
 # catalog-version undef
 Name:		texlive-ot-tableau
-Version:	20100414
-Release:	10
+Version:	20170726
+Release:	1
 Summary:	Optimality Theory tableaux in LaTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/ot-tableau
