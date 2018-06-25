@@ -5,7 +5,7 @@
 # catalog-license lppl
 # catalog-version undef
 Name:		texlive-ot-tableau
-Version:	20170726
+Version:	20180303
 Release:	1
 Summary:	Optimality Theory tableaux in LaTeX
 Group:		Publishing
