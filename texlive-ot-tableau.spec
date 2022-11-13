@@ -1,18 +1,12 @@
-# revision 17829
-# category Package
-# catalog-ctan /macros/latex/contrib/ot-tableau
-# catalog-date 2010-04-14 18:13:33 +0200
-# catalog-license lppl
-# catalog-version undef
 Name:		texlive-ot-tableau
-Version:	20190228
+Version:	59318
 Release:	1
 Summary:	Optimality Theory tableaux in LaTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/ot-tableau
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ot-tableau.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ot-tableau.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ot-tableau.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ot-tableau.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -26,12 +20,12 @@ code painless (well, less painful). A variety of stylistic
 variants are available to suit personal taste.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -42,24 +36,10 @@ variants are available to suit personal taste.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20100414-2
-+ Revision: 754559
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20100414-1
-+ Revision: 719172
-- texlive-ot-tableau
-- texlive-ot-tableau
-- texlive-ot-tableau
-- texlive-ot-tableau
-
