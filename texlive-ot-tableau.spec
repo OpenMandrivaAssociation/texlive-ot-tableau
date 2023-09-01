@@ -1,6 +1,6 @@
 Name:		texlive-ot-tableau
-Version:	59318
-Release:	2
+Version:	67813
+Release:	1
 Summary:	Optimality Theory tableaux in LaTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/ot-tableau
