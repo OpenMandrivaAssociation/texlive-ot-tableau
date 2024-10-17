@@ -3,7 +3,7 @@ Version:	67813
 Release:	1
 Summary:	Optimality Theory tableaux in LaTeX
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/ot-tableau
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/ot-tableau
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ot-tableau.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ot-tableau.doc.r%{version}.tar.xz
